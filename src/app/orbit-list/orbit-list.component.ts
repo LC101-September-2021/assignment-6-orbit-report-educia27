@@ -10,6 +10,13 @@ import { Satellite } from '../satellite';
 export class OrbitListComponent implements OnInit {
 
   @Input() satellites: Satellite[];
+	isSpaceDebris(data: string): boolean {
+		if (data === "Space Debris") {
+			return true;
+		} else {
+			return false;
+		}
+	}
   constructor() { }
 
   ngOnInit() {
