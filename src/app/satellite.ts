@@ -15,13 +15,13 @@ export class Satellite {
 		this.operational = operational;
    }
 	
-	// isSpaceDebris(data: string): boolean {
-	// 	if (data === "Space Debris") {
-	// 		return true;
-	// 	} else {
-	// 		return false;
-	// 	}
-	// }	
+	isSpaceDebris(data: string): boolean {
+		if (data === "Space Debris") {
+			return true;
+		} else {
+			return false;
+		}
+	}	
    
 
 }
