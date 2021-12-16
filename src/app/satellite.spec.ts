@@ -19,12 +19,12 @@ describe('Satellite', () => {
   });
 
   it('isSpaceDebris should return false if not debris type', () => {
-    expect(satellite.isSpaceDebris()).toEqual(false);
+    expect(satellite.isSpaceDebris(satellite.type)).toEqual(false);
   });
 
   it('isSpaceDebris should return true if debris type', () => {
     let junk = new Satellite("foo", "Space Debris", "baz", "lur", false);
-    expect(junk.isSpaceDebris()).toEqual(true);
+    expect(junk.isSpaceDebris("Space Debris")).toEqual(true);
   });
 
  
