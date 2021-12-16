@@ -1,9 +1,9 @@
 <table>
     <tr class="header-row">
-        <th (click)="sort('name')" class="sortable">Name</th>
+        <th>Name</th>
         <th (click)="sort('type')" class="sortable">Type</th>
         <th>Operational</th>
-        <th>Orbit Type</th>
+        <th (click) = "sort('orbitType')" class = "sortable">Orbit Type</th>
         <th>Launch Date</th>
     </tr>
     <tr class="data-row" *ngFor = "let satellite of satellites">
